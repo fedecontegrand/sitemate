@@ -6,7 +6,7 @@ document.querySelector('#app').innerHTML = `
 `
 
 let clickMeButton=document.getElementById("clickme")
-clickMeButton.addEventListener("click",()=>onClickButton("Hola"))
+clickMeButton.addEventListener("click",()=>onClickButton("Here goes the message"))
 
 export function onClickButton(message){
     
