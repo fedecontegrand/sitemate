@@ -13,6 +13,10 @@ export function onClickButton(message){
     let app=document.querySelector("#app")
 
     let dialogDiv=document.createElement("div")
+
+    dialogDiv.className="dialogDiv"
+
+    let buttonsDiv=document.createElement("div")
     
     let messageOnDiv=document.createElement("p")
     
@@ -40,8 +44,10 @@ export function onClickButton(message){
       app.append(denyMessage)
     })
     
-    dialogDiv.append(acceptButton)
-    dialogDiv.append(denyButton)
+    buttonsDiv.append(acceptButton)
+    buttonsDiv.append(denyButton)
+
+    dialogDiv.append(buttonsDiv)
 
     app.append(dialogDiv)
     
